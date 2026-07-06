@@ -16,6 +16,13 @@ This project is written in embedded C without STM32 HAL. It talks directly to ST
 - Six-button navigation
 - Cooperative task scheduler
 - ST7735 display driver over SPI
+  
+## Demo
+
+<img width="1920" height="1080" alt="Videoshot_20260706_214916" src="https://github.com/user-attachments/assets/5144506e-f8d8-4287-b633-07ba158a6de3" />
+<img width="1920" height="1080" alt="Videoshot_20260706_214944" src="https://github.com/user-attachments/assets/810bc6df-2a4d-4a61-9790-03f0a5d7c966" />
+<img width="1920" height="1080" alt="Videoshot_20260706_214929" src="https://github.com/user-attachments/assets/c028e2a7-739e-4ff5-9224-e08a4e6c1f0d" />
+<img width="1920" height="1080" alt="Videoshot_20260706_215008" src="https://github.com/user-attachments/assets/c64133aa-6848-42d5-a3a6-c119bd27c7a6" />
 
 ## Hardware
 
@@ -134,8 +141,6 @@ CoreSelva_OS/
   display/
     st7735.c/.h           TFT display driver
     tft_config.h          Display size and offsets
-  docs/
-    project-explained.html
   kernel/
     kernel.c/.h           Small cooperative scheduler
 ```
@@ -153,9 +158,6 @@ The firmware starts in `main()`:
 
 For a full beginner-friendly, file-by-file code explanation, open:
 
-```text
-docs/project-explained.html
-```
 
 ## Notes
 
