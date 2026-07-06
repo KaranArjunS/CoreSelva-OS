@@ -1,6 +1,6 @@
-# CoreSelva MOS
+# CoreSelva OS
 
-CoreSelva MOS is a tiny bare-metal STM32WB55 project that turns a 1.8 inch ST7735 TFT into a small phone-style interface. It has a boot splash, home screen, app drawer, Snake game, shutdown screen, and an LED app that controls an external LED on PA0.
+CoreSelva OS is a tiny bare-metal STM32WB55 project that turns a 1.8 inch ST7735 TFT into a small phone-style interface. It has a boot splash, home screen, app drawer, Snake game, shutdown screen, and an LED app that controls an external LED on PA0.
 
 This project is written in embedded C without STM32 HAL. It talks directly to STM32 registers, so it is useful for learning how GPIO, SPI, SysTick, a simple scheduler, and a TFT display work together.
 
@@ -39,7 +39,7 @@ TFT wiring used by this project:
 | TFT signal | STM32 pin |
 |---|---|
 | SCK / SCL | PA5 |
-| SDA / MOSI | PA7 |
+| SDA / OSI | PA7 |
 | CS | PA4 |
 | DC / A0 | PB0 |
 | RESET | PB1 |
@@ -101,7 +101,7 @@ Shutdown:
 The project uses the Arm GNU Toolchain:
 
 ```powershell
-cd CoreSelva_MOS
+cd CoreSelva_OS
 make
 ```
 
@@ -128,7 +128,7 @@ You can use your normal STM32 flashing tool, for example STM32CubeProgrammer, ST
 ## Project Structure
 
 ```text
-CoreSelva_MOS/
+CoreSelva_OS/
   main.c                  OS UI, apps, Snake game, boot flow
   Makefile                Build rules
   startup_stm32wb55.s     Vector table and reset startup
